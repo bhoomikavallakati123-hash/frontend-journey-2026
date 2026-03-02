@@ -110,3 +110,27 @@ console.log("Even Doubled:", result);
 
 // =============================
 console.log("\n===== END OF DAY 3 =====");
+
+const number = [2, 4, 6, 8];
+
+const num = number.map((n) => n + 1);
+
+console.log("first:", number);
+console.log("second", num);
+
+const numbe = [2, 4, 6, 8];
+
+const numb = numbe.filter((n) => n > 4);
+
+console.log("first", numbe);
+console.log("second:", numb);
+
+const users = [
+  { name: "Ravi", age: 22 },
+  { name: "Aman", age: 16 },
+  { name: "Sita", age: 25 },
+];
+const us = users.reduce((acc, curr) => {
+  acc.push(curr.name);
+  return acc;
+}, []);
